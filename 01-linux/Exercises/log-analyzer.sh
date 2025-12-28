@@ -1,4 +1,4 @@
-path="/d/fullstack-workshop/06-javascript/Exercises/sample-log.txt"
+path="/d/fullstack-workshop/01-linux/Exercises/sample-log.txt"
 
 if [ -e "$path" ]; then
     echo "exist"
