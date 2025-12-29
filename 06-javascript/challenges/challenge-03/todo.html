@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Todo UI</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 40px;
+}
+
+.todo-box {
+    width: 500px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+/* Add Task */
+.add-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.add-row input {
+    flex: 1;
+    padding: 6px;
+}
+
+.add-row button {
+    padding: 6px 12px;
+}
+
+/* Category */
+.category-row {
+    margin-bottom: 10px;
+}
+
+.category-row select {
+    padding: 6px;
+}
+
+/* Divider */
+hr {
+    margin: 10px 0;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.filters button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Task List */
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.task-left {
+    display: flex;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 12px;
+    background: #e0e0e0;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="todo-box">
+
+    <!-- Add Task -->
+    <div class="add-row">
+        <label>Add Task:</label>
+        <input type="text" placeholder="____________">
+        <button>Add</button>
+    </div>
+
+    <!-- Category -->
+    <div class="category-row">
+        Category:
+        <select>
+            <option>Work</option>
+            <option>Personal</option>
+            <option>All</option>
+        </select>
+    </div>
+
+    <hr>
+
+    <!-- Filters -->
+    <div class="filters">
+        Filter:
+        <button>All</button>
+        <button>Work</button>
+        <button>Personal</button>
+    </div>
+
+    <hr>
+
+    <!-- Tasks -->
+    <div class="task">
+        <div class="task-left">
+            <input type="checkbox">
+            <span>Complete project report</span>
+        </div>
+        <span class="tag">Work</span>
+    </div>
+
+    <div class="task">
+        <div class="task-left">
+            <input type="checkbox" checked>
+            <span>Buy groceries</span>
+        </div>
+        <span class="tag">Personal</span>
+    </div>
+
+    <div class="task">
+        <div class="task-left">
+            <input type="checkbox">
+            <span>Review code</span>
+        </div>
+        <span class="tag">Work</span>
+    </div>
+
+</div>
+
+</body>
+</html>
