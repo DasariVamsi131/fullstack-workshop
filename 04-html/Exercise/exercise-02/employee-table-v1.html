@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Company Name</h1>
+    <p>Employee Directory</p>
+</header>
+
+<main>
+
+<table aria-label="Company Employee Directory">
+
+    <caption>Company Employee Directory - 2024</caption>
+
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Photo</th>
+            <th scope="col">Name</th>
+            <th scope="col">Department</th>
+            <th scope="col">Position</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">Status</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr data-department="engineering" data-status="active">
+            <th scope="row">EMP001</th>
+            <td><img src="https://via.placeholder.com/50" alt="John Doe"></td>
+            <td>JOHN</td>
+            <td>Engineering</td>
+            <td>Manager</td>
+            <td><a href="mailto:john@company.com">john@company.com</a></td>
+            <td><a href="tel:+1234567890">123-456-7890</a></td>
+            <td><time datetime="2022-03-15">Mar 15, 2022</time></td>
+            <td>Active</td>
+        </tr>
+
+        <tr data-department="finance" data-status="leave">
+            <th scope="row">EMP002</th>
+            <td><img src="https://via.placeholder.com/50" alt="Vamsi"></td>
+            <td>VAMSI</td>
+            <td>Finance</td>
+            <td>Senior</td>
+            <td><a href="mailto:vamsi@company.com">vamsi@company.com</a></td>
+            <td><a href="tel:+1234567890">123-456-7890</a></td>
+            <td><time datetime="2022-03-15">Mar 15, 2022</time></td>
+            <td>On Leave</td>
+        </tr>
+
+        <tr data-department="sales" data-status="remote">
+            <th scope="row">EMP003</th>
+            <td><img src="https://via.placeholder.com/50" alt="Dasari"></td>
+            <td>DASARI</td>
+            <td>Sales</td>
+            <td>Junior</td>
+            <td><a href="mailto:dasari@company.com">dasari@company.com</a></td>
+            <td><a href="tel:+1234567890">123-456-7890</a></td>
+            <td><time datetime="2022-03-15">Mar 15, 2022</time></td>
+            <td>Remote</td>
+        </tr>
+
+        <tr data-department="marketing" data-status="active">
+            <th scope="row">EMP004</th>
+            <td><img src="https://via.placeholder.com/50" alt="Ganesh"></td>
+            <td>GANESH</td>
+            <td>Marketing</td>
+            <td>Junior</td>
+            <td><a href="mailto:ganesh@company.com">ganesh@company.com</a></td>
+            <td><a href="tel:+1234567890">123-456-7890</a></td>
+            <td><time datetime="2022-03-15">Mar 15, 2022</time></td>
+            <td>Active</td>
+        </tr>
+
+        <tr data-department="engineering" data-status="leave">
+            <th scope="row">EMP005</th>
+            <td><img src="https://via.placeholder.com/50" alt="Siva"></td>
+            <td>SIVA</td>
+            <td>Engineering</td>
+            <td>Junior</td>
+            <td><a href="mailto:siva@company.com">siva@company.com</a></td>
+            <td><a href="tel:+1234567890">123-456-7890</a></td>
+            <td><time datetime="2022-03-15">Mar 15, 2022</time></td>
+            <td>On Leave</td>
+        </tr>
+
+        <tr data-department="sales" data-status="active">
+            <th scope="row">EMP006</th>
+            <td><img src="https://via.placeholder.com/50" alt="Naresh"></td>
+            <td>NARESH</td>
+            <td>Sales</td>
+            <td>Junior</td>
+            <td><a href="mailto:naresh@company.com">naresh@company.com</a></td>
+            <td><a href="tel:+1234567890">123-456-7890</a></td>
+            <td><time datetime="2022-03-15">Mar 15, 2022</time></td>
+            <td>Active</td>
+        </tr>
+
+        <tr data-department="hr" data-status="remote">
+            <th scope="row">EMP007</th>
+            <td><img src="https://via.placeholder.com/50" alt="Pavan"></td>
+            <td>PAVAN</td>
+            <td>HR</td>
+            <td>Manager</td>
+            <td><a href="mailto:pavan@company.com">pavan@company.com</a></td>
+            <td><a href="tel:+1234567890">123-456-7890</a></td>
+            <td><time datetime="2022-03-15">Mar 15, 2022</time></td>
+            <td>Remote</td>
+        </tr>
+
+        <tr data-department="marketing" data-status="remote">
+            <th scope="row">EMP008</th>
+            <td><img src="https://via.placeholder.com/50" alt="Srinu"></td>
+            <td>SRINU</td>
+            <td>Marketing</td>
+            <td>Senior</td>
+            <td><a href="mailto:srinu@company.com">srinu@company.com</a></td>
+            <td><a href="tel:+1234567890">123-456-7890</a></td>
+            <td><time datetime="2022-03-15">Mar 15, 2022</time></td>
+            <td>Remote</td>
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="9">
+                Total Employees: 8 |
+                Engineering: 2 |
+                Marketing: 2 |
+                Finance: 1 |
+                Sales: 2 |
+                HR: 1
+            </td>
+        </tr>
+    </tfoot>
+
+</table>
+
+</main>
+
+</body>
+</html>
