@@ -1,13 +1,13 @@
 # Review: 04-html
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-31 10:53
+**Review Date:** 2026-01-02 13:55
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 5
+**Files submitted:** 7
 
 ### Relevance Check
 
@@ -71,7 +71,33 @@ Unable to check - no exercise file
 
    **Score: 4/5**
 
-### Topic Score: 34 / 35 (97%)
+📄 **e.html**
+   Path: `04-html/Exercise/exercise-02/e.html`
+   Lines: 138
+
+    - ✅ Has `<!DOCTYPE html>`
+    - 💡 Consider using semantic tags (header, nav, main, etc.)
+    - ✅ Images have `alt` attributes
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+
+   **Score: 4/5**
+
+📄 **employee-table-v1.html**
+   Path: `04-html/Exercise/exercise-02/employee-table-v1.html`
+   Lines: 154
+
+    - ✅ Has `<!DOCTYPE html>`
+    - ✅ Uses semantic HTML5 tags
+    - ✅ Images have `alt` attributes
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+    - 📌 **Version 1 (Raw HTML)**
+    - ✅ Pure semantic HTML (no styling)
+
+   **Score: 5/5**
+
+### Topic Score: 43 / 45 (95%)
 
 ---
 
