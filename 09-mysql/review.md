@@ -1,19 +1,19 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2025-12-31 10:53
+**Review Date:** 2026-01-02 16:47
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 0
+**Files submitted:** 12
 
 ### Relevance Check
 
 ❌ **Submission does NOT match exercise requirements**
    Expected keywords: customer product category order ecommerce schema queries
-   None of the expected keywords found in submission
+   Found only: category order 
    **Please review the exercise requirements and resubmit**
 
 ### ⚠️ Review Skipped
@@ -27,9 +27,162 @@ Please complete the correct exercise and resubmit.
 
 ## Challenge
 
-**Status:** ⚠️ Not submitted
+**Status:** ✅ Submitted (12 files)
 
-Submit to: `09-mysql/challenges/`
+### Challenge Relevance Check
+
+✅ Submission appears relevant to the exercise
+   Found keywords: employee department salary project assignment 
+
+### Challenge Code Review
+
+📄 **assignment-validation-trigger.sql**
+   Lines: 55
+
+    📋 **SQL Query Review**
+
+    - ✅ Contains SELECT statement
+    - ✅ Specifies table source
+    - ✅ Uses filtering/joining
+
+   **Score: 3/3**
+
+📄 **budget-utilization.sql**
+   Lines: 39
+
+    📋 **SQL Query Review**
+
+    - ✅ Contains SELECT statement
+    - ✅ Specifies table source
+    - ✅ Uses filtering/joining
+
+   **Score: 3/3**
+
+📄 **date-report-function.sql**
+   Lines: 40
+
+    📋 **SQL Query Review**
+
+    - ✅ Contains SELECT statement
+    - ✅ Specifies table source
+    - ✅ Uses filtering/joining
+
+   **Score: 3/3**
+
+📄 **department-stats.sql**
+   Lines: 7
+
+    📋 **Challenge 1: Department Stats**
+    Expected: department, employee_count, avg_salary, max_salary
+
+    - ✅ Groups by department
+    - ✅ Counts employees (COUNT(*))
+    - ✅ Calculates average salary
+    - ✅ Finds maximum salary
+    - ✅ Filters departments with >2 employees (HAVING)
+
+   **Score: 5/5**
+
+📄 **employee-hierarchy.sql**
+   Lines: 4
+
+    📋 **Challenge 2: Employee Hierarchy**
+    Expected: employee_name, manager_name (self-join)
+
+    - ✅ Uses self-join on employees table
+    - ⚠️ Consider LEFT JOIN to show employees without managers
+    - ✅ Joins on manager_id = id
+    - ✅ Uses table aliases
+
+   **Score: 3/4**
+
+📄 **name-formatter.sql**
+   Lines: 21
+
+    📋 **Challenge 6: Employee Name Formatter**
+    Expected: formatted_name, email, initials (string functions)
+
+    - ✅ Uses UPPER() function
+    - ✅ Uses CONCAT() for string building
+    - ✅ Uses LEFT() for initials
+    - ✅ Generates email format
+
+   **Score: 4/4**
+
+📄 **project-workload.sql**
+   Lines: 11
+
+    📋 **Challenge 3: Project Workload**
+    Expected: project_name, budget, team_size, total_hours
+
+    - ✅ Joins projects with assignments
+    - ✅ Counts team members
+    - ✅ Sums allocated hours
+    - ✅ Filters budget > 50000
+    - ✅ Orders by total hours descending
+
+   **Score: 5/5**
+
+📄 **salary-adjustment.sql**
+   Lines: 28
+
+    📋 **SQL Query Review**
+
+    - ✅ Contains SELECT statement
+    - ✅ Specifies table source
+    - ✅ Uses filtering/joining
+
+   **Score: 3/3**
+
+📄 **salary-audit-trigger.sql**
+   Lines: 59
+
+    📋 **SQL Query Review**
+
+    - ✅ Contains SELECT statement
+    - ✅ Specifies table source
+    - ✅ Uses filtering/joining
+
+   **Score: 3/3**
+
+📄 **tenure-function.sql**
+   Lines: 28
+
+    📋 **SQL Query Review**
+
+    - ✅ Contains SELECT statement
+    - ✅ Specifies table source
+
+   **Score: 2/3**
+
+📄 **top-earners.sql**
+   Lines: 18
+
+    📋 **Challenge 4: Top Earners**
+    Expected: department, name, salary, rank_in_dept (window function)
+
+    - ✅ Uses window ranking function
+    - ✅ Partitions by department
+    - ✅ Orders by salary descending
+    - ✅ Filters top 3 earners
+
+   **Score: 4/4**
+
+📄 **unassigned-resources.sql**
+   Lines: 8
+
+    📋 **Challenge 5: Unassigned Resources**
+    Expected: id, name, department (employees not in any project)
+
+    - ✅ Uses LEFT JOIN with assignments
+    - ✅ Checks for NULL (unassigned employees)
+    - ✅ References employee_id for join
+    - ✅ Selects required columns (id, name, department)
+
+   **Score: 4/4**
+
+### Challenge Score: 42 / 44 (95%)
+
 
 ---
 
