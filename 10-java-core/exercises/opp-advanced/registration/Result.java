@@ -5,7 +5,7 @@ import java.util.List;
 public class Result {
     private boolean success;
     private String message;
-    private List errors = new ArrayList(); // NO generics
+    private List errors = new ArrayList();
 
     public static Result success(String message) {
         Result r = new Result();
